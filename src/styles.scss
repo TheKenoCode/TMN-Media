@@ -8,7 +8,7 @@ $lg: 1200px;
 $xl: 1536px;
 
 body {
-	background: white;
+	background: #181a1b;
 	margin: 0;
 	padding: 0;
 }
@@ -74,16 +74,19 @@ body {
 }
 .about_section {
 	height: 100%;
+	color: white;
 	.about_container {
 		text-align: center;
 		h1 {
 			font-family: "Montserrat", sans-serif;
+			color: #feba3b;
 		}
 		p {
 			font-family: "Poppins", sans-serif;
 		}
 		h2 {
 			font-family: "Montserrat", sans-serif;
+			color: #8739fb;
 		}
 	}
 }

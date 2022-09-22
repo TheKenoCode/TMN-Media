@@ -14,7 +14,7 @@ function App() {
 					preserveAspectRatio='none'>
 					<polygon
 						className='svg--sm'
-						fill='white'
+						fill='#181a1b'
 						points='0,0 30,100 65,21 90,100 100,75 100,100 0,100'
 					/>
 				</svg>
@@ -78,7 +78,7 @@ function App() {
 					preserveAspectRatio='none'>
 					<polygon
 						className='svg--sm'
-						fill='white'
+						fill='#181a1b'
 						points='0,0 30,100 65,21 90,100 100,75 100,100 0,100'
 					/>
 				</svg>
