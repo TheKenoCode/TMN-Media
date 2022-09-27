@@ -193,23 +193,97 @@ body {
 	}
 }
 .team_section {
+	svg {
+		position: absolute;
+		top: 50;
+		transform: rotate(180deg);
+		width: 100%;
+		height: 100px;
+	}
 	background-color: #360f6f;
-	height: 20vh;
-
+	height: 100%;
+	.team_header_text {
+		margin: 0;
+		text-align: center;
+		font-family: "Montserrat", sans-serif;
+		color: #feba3b;
+		font-size: 2rem;
+		margin-bottom: 20px;
+		padding: 40px;
+	}
 	.team_container {
 		.team_images {
+			flex-direction: column;
+			display: flex;
+			margin: 10px auto;
+			padding: 10px;
+			img {
+				width: 110px;
+				margin: auto;
+				display: block;
+				border: 7px solid #ba7900;
+				border-radius: 60px;
+			}
+			.team_names {
+				font-family: "Montserrat", sans-serif;
+				color: white;
+				text-align: center;
+			}
+			p {
+				text-align: center;
+				color: #feba3b;
+				font-family: "Montserrat", sans-serif;
+				margin-top: -10px;
+			}
 		}
 		.team_text {
+			color: white;
+			font-size: 1.2rem;
+			font-family: "Poppins", sans-serif;
+			text-align: center;
+			padding: 10px;
 		}
 	}
 }
 
 .contact_section {
-	height: 20vh;
+	height: 100%;
+	h1 {
+		color: #feba3b;
+		font-family: "Montserrat", sans-serif;
+		text-align: center;
+	}
+	h2 {
+		color: white;
+		font-family: "Montserrat", sans-serif;
+		text-align: center;
+		font-size: 1.2rem;
+		margin-bottom: -35px;
+	}
+
+	h3 {
+		color: #8739fb;
+		font-size: 2rem;
+		font-family: "Montserrat", sans-serif;
+		text-align: center;
+	}
+	img {
+		width: 110px;
+		margin: auto;
+		display: block;
+		border: 7px solid #ba7900;
+		border-radius: 60px;
+	}
+	p {
+		color: white;
+		font-family: "Montserrat", sans-serif;
+		text-align: center;
+	}
 	.contact_container {
-		.contact_schedule_window {
-		}
-		.contact_text {
+		.calendly-inline-widget {
+			padding: 20px;
+			height: 750px;
+			min-width: 320px;
 		}
 	}
 }

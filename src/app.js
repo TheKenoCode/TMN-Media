@@ -4,6 +4,7 @@ import React from "react"
 import "./styles.scss"
 import hero_logo from "./assets/brand/logo-vertical-b-text.png"
 import video1 from "./assets/64004-mobile-marketing-lottie-animation.mp4"
+import avatar from "./assets/avatar.png"
 function App() {
 	return (
 		<div>
@@ -23,8 +24,8 @@ function App() {
 					<div className='hero_text_container'>
 						<h1>BETTER BRAND BUILDING</h1>
 						<h2>
-							We can help e-commerce and information product businesses produce
-							outstanding returns on their brand investments.
+							We help e-commerce and small businesses produce outstanding
+							returns on their brand investments.
 						</h2>
 						<p>
 							Don't waste your time and money on ineffective advertising
@@ -57,9 +58,9 @@ function App() {
 						inefficiencies and formalities that most agencies suffer from.
 					</p>
 					<p>
-						Our client case studies are legendary, our waiting list is longer
-						than your complaints with your current agency, and we're looking for
-						clients who fit a specific mold.
+						Our case studies for clients are extraordinary, our waiting list is
+						longer than your complaints with your current agency, and we're
+						looking for clients who fit a certain profile.
 					</p>
 					<h2>
 						Maybe it's you: we're honored to find out. Can we schedule a free
@@ -112,10 +113,10 @@ function App() {
 						<h1>Our Services</h1>
 						<p>All you need to make your business better.</p>
 						<ul>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
+							<li>Social media marketing</li>
+							<li>SEO/Search engine optimization</li>
+							<li>Web/App development</li>
+							<li>Graphic design</li>
 						</ul>
 					</div>
 				</div>
@@ -123,14 +124,53 @@ function App() {
 
 			<section className='team_section'>
 				<div className='team_container'>
-					<div className='team_images'></div>
-					<div className='team_text'></div>
+					<h1 className='team_header_text'>Meet The Team</h1>
+					<div className='team_images'>
+						<img src={avatar} alt='' />
+						<h1 className='team_names'>Elvis Jusupović</h1>
+						<p>Founder/Chief Marketing Officer</p>
+					</div>
+					<div className='team_images'>
+						<img src={avatar} alt='' />
+						<h1 className='team_names'>Kenan Serhatlić</h1>
+						<p>Founder/Senior Software Engineer</p>
+					</div>
+					<div className='team_images'>
+						<img src={avatar} alt='' />
+						<h1 className='team_names'>Hasib Zulfić</h1>
+						<p>Founder/Performance Marketer</p>
+					</div>
+					<div className='team_images'>
+						<img src={avatar} alt='' />
+						<h1 className='team_names'>Amar Avdić</h1>
+						<p>Founder/Client Specialist</p>
+					</div>
+					<p className='team_text'>
+						With our fascinating workplace culture, quality of clientele, and
+						Hasib's social media in the thousands, TMN-Media has our pick of the
+						litter all over the world when it comes to who we can hire. The team
+						in front of you is the result of that.
+					</p>
 				</div>
 			</section>
 			<section className='contact_section'>
+				<h1>Contact us</h1>
 				<div className='contact_container'>
-					<div className='contact_schedule_window'></div>
-					<div className='contact_text'></div>
+					<div className='contact_text'>
+						<h2>Schedule a call with Elvis today!</h2>
+						<h3>Free 15-Minute Call</h3>
+						<img src={avatar} alt='' />
+
+						<p>
+							You will have a clear understanding of the next steps you can take
+							for your business to start generating consistent and reliable
+							results online with Paid Advertising by the end of this Audit
+							call.
+						</p>
+					</div>
+					<div
+						className='calendly-inline-widget'
+						data-url='https://calendly.com/tmnmedia/aduit-call?hide_event_type_details=1&hide_gdpr_banner=1'></div>
 				</div>
 			</section>
 
