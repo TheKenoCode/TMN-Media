@@ -5,6 +5,8 @@ import "./styles.scss"
 import hero_logo from "./assets/brand/logo-vertical-b-text.png"
 import video1 from "./assets/64004-mobile-marketing-lottie-animation.mp4"
 import avatar from "./assets/avatar.png"
+import { FaCheckCircle } from "react-icons/fa"
+import { InlineWidget } from "react-calendly"
 function App() {
 	return (
 		<div>
@@ -76,9 +78,9 @@ function App() {
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					viewBox='0 0 100 100'
+					className='svg--sm'
 					preserveAspectRatio='none'>
 					<polygon
-						className='svg--sm'
 						fill='#181a1b'
 						points='0,0 30,100 65,21 90,100 100,75 100,100 0,100'
 					/>
@@ -113,43 +115,81 @@ function App() {
 						<h1>Our Services</h1>
 						<p>All you need to make your business better.</p>
 						<ul>
-							<li>Social media marketing</li>
-							<li>SEO/Search engine optimization</li>
-							<li>Web/App development</li>
-							<li>Graphic design</li>
+							<li>
+								<FaCheckCircle className='check-icon' />
+								<h4>Social media marketing</h4>
+							</li>
+							<li>
+								<FaCheckCircle className='check-icon' />
+								<h4>SEO/Search engine optimization</h4>
+							</li>
+							<li>
+								<FaCheckCircle className='check-icon' />
+								<h4>Media planning</h4>
+							</li>
+							<li>
+								<FaCheckCircle className='check-icon' />
+								<h4>Analytics</h4>
+							</li>
+							<li>
+								<FaCheckCircle className='check-icon' />
+								<h4>Web/App development</h4>
+							</li>
+							<li>
+								<FaCheckCircle className='check-icon' />
+								<h4>Graphic design</h4>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</section>
 
 			<section className='team_section'>
+				<h1 className='team_header_text'>Meet The Team</h1>
 				<div className='team_container'>
-					<h1 className='team_header_text'>Meet The Team</h1>
-					<div className='team_images'>
-						<img src={avatar} alt='' />
-						<h1 className='team_names'>Elvis Jusupović</h1>
-						<p>Founder/Chief Marketing Officer</p>
+					<div>
+						<div className='team_images'>
+							<img src={avatar} alt='' />
+							<h1 className='team_names'>Elvis Jusupović</h1>
+							<p>Founder/Chief Marketing Officer</p>
+						</div>
+						<div className='team_images'>
+							<img src={avatar} alt='' />
+							<h1 className='team_names'>Kenan Serhatlić</h1>
+							<p>Founder/Senior Software Engineer</p>
+						</div>
 					</div>
-					<div className='team_images'>
-						<img src={avatar} alt='' />
-						<h1 className='team_names'>Kenan Serhatlić</h1>
-						<p>Founder/Senior Software Engineer</p>
+					<div>
+						<div>
+							<div className='team_images hasib'>
+								<img src={avatar} alt='' />
+								<h1 className='team_names'>Hasib Zulfić</h1>
+								<p>Founder/Performance Marketer</p>
+							</div>
+							<div className='team_images'>
+								<img src={avatar} alt='' />
+								<h1 className='team_names'>Ibro Kardašević</h1>
+								<p>Founder/Junior Software Engineer</p>
+							</div>
+						</div>
 					</div>
-					<div className='team_images'>
-						<img src={avatar} alt='' />
-						<h1 className='team_names'>Hasib Zulfić</h1>
-						<p>Founder/Performance Marketer</p>
-					</div>
-					<div className='team_images'>
-						<img src={avatar} alt='' />
-						<h1 className='team_names'>Amar Avdić</h1>
-						<p>Founder/Client Specialist</p>
+					<div>
+						<div className='team_images '>
+							<img src={avatar} alt='' />
+							<h1 className='team_names'>Amar Avdić</h1>
+							<p>Founder/Client Specialist</p>
+						</div>
+						<div className='team_images izo'>
+							<img src={avatar} alt='' />
+							<h1 className='team_names'>Izo Omanović</h1>
+							<p>Founder/Client Specialist</p>
+						</div>
 					</div>
 					<p className='team_text'>
-						With our fascinating workplace culture, quality of clientele, and
-						Hasib's social media in the thousands, TMN-Media has our pick of the
-						litter all over the world when it comes to who we can hire. The team
-						in front of you is the result of that.
+						With our fascinating workplace culture, quality of clientele,
+						TMN-Media has our pick of the litter all over the world when it
+						comes to who we can hire. The team in front of you is the result of
+						that.
 					</p>
 				</div>
 			</section>
@@ -168,9 +208,10 @@ function App() {
 							call.
 						</p>
 					</div>
-					<div
+					<InlineWidget
 						className='calendly-inline-widget'
-						data-url='https://calendly.com/tmnmedia/aduit-call?hide_event_type_details=1&hide_gdpr_banner=1'></div>
+						url='https://calendly.com/tmnmedia/aduit-call?back=1&month=2022-09'
+					/>
 				</div>
 			</section>
 

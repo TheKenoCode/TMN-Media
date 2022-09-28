@@ -155,7 +155,7 @@ body {
 	height: 100%;
 	padding-bottom: 20px;
 	background-image: linear-gradient(#360f6f, #5b19bb);
-	svg {
+	.svg--sm {
 		position: absolute;
 		top: 0;
 		transform: rotate(180deg);
@@ -186,7 +186,22 @@ body {
 			}
 			ul {
 				li {
+					display: flex;
 					font-family: "Montserrat", sans-serif;
+					list-style-type: none;
+					width: 100%;
+					margin: auto;
+					.check-icon {
+						color: #feba3b;
+						font-size: 1.3rem;
+						margin: auto 10px;
+					}
+					h4 {
+						margin: 5px auto;
+						text-align: start;
+						font-size: 1rem;
+						width: 100%;
+					}
 				}
 			}
 		}
@@ -242,11 +257,15 @@ body {
 			font-family: "Poppins", sans-serif;
 			text-align: center;
 			padding: 10px;
+			padding-bottom: 40px;
 		}
 	}
 }
 
 .contact_section {
+	padding-top: 20px;
+	padding-bottom: 40px;
+
 	height: 100%;
 	h1 {
 		color: #feba3b;
@@ -282,7 +301,7 @@ body {
 	.contact_container {
 		.calendly-inline-widget {
 			padding: 20px;
-			height: 750px;
+			height: 850px;
 			min-width: 320px;
 		}
 	}
@@ -523,6 +542,53 @@ body {
 		}
 		.footer_logo {
 			width: 15%;
+		}
+	}
+
+	.team_section {
+		svg {
+			position: absolute;
+			top: 50;
+			transform: rotate(180deg);
+			width: 100%;
+			height: 100px;
+		}
+		background-color: #360f6f;
+		height: 100%;
+		.team_header_text {
+		}
+		.team_container {
+			max-width: 1200px;
+			margin: auto;
+			flex-direction: row;
+			display: flex;
+
+			width: 100%;
+
+			.team_images {
+				margin: auto auto;
+				padding: 10px;
+				width: 100%;
+				height: auto;
+				img {
+					width: 110px;
+					border: 7px solid #ba7900;
+					border-radius: 60px;
+				}
+				h1 {
+					width: 250px;
+				}
+				p {
+				}
+			}
+			.izo {
+				margin-top: 20px;
+			}
+
+			.team_text {
+				margin: auto;
+				font-size: 1.5rem;
+			}
 		}
 	}
 }
